@@ -1,0 +1,97 @@
+<mat-card (change)="getTotalMonthlyExpense()">
+  <mat-card-header class="mat-title">
+      Monthly Expenses
+  </mat-card-header>
+  <mat-card-content>
+
+    <table
+      class="mat-body-1 full-width"
+      >
+      <tr class="full-width">
+        <td>Mortgage payment</td>
+        <td>
+          <p style="margin-bottom: 0; padding-right: 12px;">
+            {{ getMonthlyPmt() | number:'1.0-0' }}
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>Property tax</td>
+        <td>
+            <input
+              matInput
+              type="number"
+              class="editable-input"
+              [(ngModel)]="propertyTax">
+        </td>
+      </tr>
+      <tr>
+        <td>Monthly debt payments</td>
+        <td>
+            <input
+              matInput
+              type="number"
+              class="editable-input"
+              [(ngModel)]="monthDebtPmt">
+        </td>
+      </tr>
+      <tr>
+        <td>Utilities</td>
+        <td>
+            <input
+              matInput
+              type="number"
+              class="editable-input"
+              [(ngModel)]="utilities">
+        </td>
+      </tr>
+      <tr>
+        <td>Property insurance</td>
+        <td>
+            <input
+              matInput
+              type="number"
+              class="editable-input"
+              [(ngModel)]="propertyInsurance">
+        </td>
+      </tr>
+      <tr>
+        <td>Phone</td>
+        <td>
+            <input
+              matInput
+              type="number"
+              class="editable-input"
+              [(ngModel)]="phone">
+        </td>
+      </tr>
+      <tr>
+        <td>Cable</td>
+        <td>
+            <input
+              matInput
+              type="number"
+              class="editable-input"
+              [(ngModel)]="cable">
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom: 0.7pt solid #000">Internet</td>
+        <td style="border-bottom: 0.7pt solid #000">
+            <input
+              matInput
+              type="number"
+              class="editable-input"
+              [(ngModel)]="internet">
+        </td>
+      </tr>
+      <tr class="my-centered">
+        <td style="border-bottom: 0">Total</td>
+        <td style="border-bottom: 0; padding-right: 12px;">
+          <p>{{ total | number:'1.0-0' }}</p>
+        </td>
+      </tr>
+    </table>
+  </mat-card-content>
+</mat-card>
+

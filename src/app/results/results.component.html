@@ -1,0 +1,42 @@
+<mat-card [@resultState]="getResultState()">
+  <i
+    class="material-icons button"
+    style="float: right; cursor: pointer"
+    (click)="setResultState('hide')"
+  >close</i>
+  <mat-card-header>
+    <h4 class="mat-title">Results</h4>
+  </mat-card-header>
+  <mat-card-content id="result">
+
+    <div class="flex-containter">
+    <div class="mat-subheading-1 my-centered" *ngIf="needMortgageInsurance()">
+      <h4
+        style="margin-bottom: 0"
+        matTooltip="Mortgage default insurance is required on all mortgages with down payments of less than 20%, which are known as high ratio mortgages."
+      >Mortgage insurance</h4>
+      <p class="mat-body-2">$ {{ getMortgageInsurance() | number:'1.0-0' }}</p>
+    </div>
+
+    <div class="mat-subheading-1 my-centered">
+      <h4
+        style="margin-bottom: 0"
+        matTooltip="Mortgage required = Total price - Down payment + mortgage insurance"
+      >Mortgage required</h4>
+      <p class="mat-body-2">$ {{ getMortgageRequired() | number:'1.0-0' }}</p>
+    </div>
+    </div>
+    <br>
+    <div class="my-centered">
+      <h2>Monthly Payment</h2>
+      <h2>{{ getMonthlyPmt() | currency:'USD':true:'1.0-0' }}</h2>
+    </div>
+    <br>
+
+    <mat-slide-toggle [(ngModel)]="isExpenseVisible">Monthly Expenses</mat-slide-toggle>
+
+  </mat-card-content>
+
+</mat-card>
+
+<app-month-expense *ngIf="isExpenseVisible"></app-month-expense>
