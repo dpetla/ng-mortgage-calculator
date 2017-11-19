@@ -1,6 +1,6 @@
 # MortgageCalc
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.4.
+This project is a mortgage calculator using Angular and Angular Material for the front-end, and [finance.js](https://github.com/essamjoubori/finance.js) for the financial calculations.
 
 ## Development server
 
