@@ -23,4 +23,4 @@ An mortgage calculator app to help home buyers estimate mortgage cost and monthl
 
 ## Views
 
-![alt text](https://github.com/dpetla/ng-mortgage-calculator/blob/master/src/assets/mortgage1_opt.png "mobile screenshot 1")  ![alt text](https://github.com/dpetla/ng-mortgage-calculator/blob/master/src/assets/mortgage2_opt.png "mobile screenshot 2")
+![alt text](https://github.com/dpetla/ng-mortgage-calculator/blob/master/src/assets/screenshots/mortgage1_opt.png "mobile screenshot 1")  ![alt text](https://github.com/dpetla/ng-mortgage-calculator/blob/master/src/assets/screenshots/mortgage2_opt.png "mobile screenshot 2")
