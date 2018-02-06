@@ -3,12 +3,14 @@
 An mortgage calculator app to help home buyers estimate mortgage cost and monthly expenses. This project was developed using Angular and Angular Material for the front-end, and [finance.js](https://github.com/essamjoubori/finance.js) for the financial calculations.
 
 
+
 ## Build process
 
  - Clone or download the repo
  - `npm install`
  - `ng serve`
  - navigate to `http://localhost:4200/`
+ 
  
  
 ## Features
@@ -19,6 +21,7 @@ An mortgage calculator app to help home buyers estimate mortgage cost and monthl
   - mortgage insurance if necessary
   - monthly expenses
 - 📱 responsive design
+
 
 
 ## Views
